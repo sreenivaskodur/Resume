@@ -1,0 +1,258 @@
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\usepackage{graphicx}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=mygreylink     % can put red here to visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.30}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+\begin{document}
+
+%\newcommand{\mywebheader}{
+%\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+%	\textbf{\href{http://www.cse.iitm.ac.in/~ssreeni}{\LARGE Sai Sreenivas K $\vert$ CS08B037}} & \href{mailto:sreenivas.iitm@gmail.com}{sreenivas.iitm@gmail.com} \\
+%	\textbf{Indian Institute of Technology, Madras} \\ 
+%	\vspace{0.1in}
+%	{\footnotesize \texttt{\colorbox{green}{[Room.No:462, Godavari Hostel, IIT-Madras \& \textbf{Phone:}+91-9840671023]}}} \\ 
+%	\end{tabular*}
+%}
+%
+%\mywebheader
+
+\begin{minipage}[c]{0.5\textwidth}
+\begin{flushleft}
+	\textbf{{\LARGE Sai Sreenivas K}} \\
+	\textbf{Indian Institute of Technology, Madras} \\
+	{\footnotesize \texttt{\colorbox{green}{[Email: sreenivas.kodur@gmail.com \& \textbf{Ph:}+91-9686043016]}}} \\
+\end{flushleft}
+%
+%%\begin{flushright}
+%%	\includegraphics[width=2cm,height=2cm]{iitmlogo.pdf}
+%%\end{flushright}
+\end{minipage}
+
+\vspace{0.1in}
+\hrulefill \\
+\vspace{0.05in}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+	\begin{center}
+	\begin{tabular}{| c | c | c |}
+	\hline
+	\textbf{Program} & \textbf{Institution} & \textbf{\% (or) CGPA} \\ \hline
+	\hspace{0.1in} Dual Degree in CSE \hspace{0.1in} & \hspace{0.1in} Indian Institute of Technology, Madras \hspace{0.1in} & \hspace{0.1in} $8.24$ (Major: $8.41$) \hspace{0.1in} \\ \hline
+	XII & Pratibha Jr.College, Hyderabad & $91.3$ \\ \hline
+	X & Gowtham Model School, Hyderabad & $91.6$ \\ \hline
+	\end{tabular}	
+	\end{center}
+%	\begin{itemize}
+%		\item
+%			\ressubheading{\href{http://www.iitm.ac.in}{Indian Institute of Technology, Madras}}{Chennai}{\href{http://www.cse.iitm.ac.in/students/}{Dual Degree in Computer Science \& Engineering}; {CGPA:8.17}}{Aug. 2008 -- Aug. 2013}
+%	\end{itemize} % End Education list
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Scholastic Achievements}
+	\begin{itemize}
+		\resitem{\footnotesize All India Rank $402$ in IIT-JEE $2008$, among top $0.1$\%.}
+		\resitem{\footnotesize Top $0.15$\% in AIEEE $2008$ \& Eamcet $2008$.}
+		\resitem{\footnotesize District $5$th in \emph{Matrusri} talent search exam.}
+	\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Key Courses}
+					\begin{itemize}
+					\resitem{\footnotesize {Graph Theory}, {Machine Learning}, {Design \& Analysis of Algorithms}, {Software Engineering}, {Probability \& Stochastic processes}, {Natural Language Processing}, {Modern Compilers: Theory \& Practice}, {Kernel Methods for pattern analysis}, {Parallel Computer Architecture}, {Language Translators}, {VLSI Design Automation Algorithms}, {Distribued Computing}, {Operating Systems}}
+					\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Interests}
+	\begin{itemize}
+		\item \footnotesize Performance oriented programming, Machine Learning \& Algorithms. \\
+		\item \footnotesize Probability \& Statistics. \\
+	\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Skills}
+	\begin{itemize}
+		\item \footnotesize \textbf{Languages: } \\
+				 - {C, C++, Java \& Objective-C} \\
+				 - {Python, MATLAB \& bash scripting} \\
+				 - {Common Lisp, Prolog \& Verilog} \\
+				 - {\LaTeX}
+		\item \footnotesize \textbf{Linux Operating System} \\
+				- {Familiar with Unix BSD sockets \& pthreads libraries.} \\
+				- {Unix tools: Flex, Yacc, Git, Vim \& Eclipse.}
+		\item \footnotesize \textbf{Large Software Frameworks} \\
+				- {LLVM Compiler for C++} \\
+				- {Jikes-RVM a java virtual machine}
+	\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Master's Thesis}
+	\begin{itemize}
+		\item
+			\ressubheading{{Machine Learning techniques for Tuning Java-RTE}}{}{Guide: Dr.Shankar Balachandran}{August 2012 - May 2013}
+			{ \footnotesize
+			\begin{itemize}
+				\resitem{Architecture specific tuning in Java-RTE.}
+				\resitem{Automatic construction of compiler heuristics using statistical analysis.}
+                \resitem{Worked on java research framework \emph{Jikes-RVM}.}
+			\end{itemize}
+			}
+	\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Internships}
+\begin{itemize}
+		\item
+			\ressubheading{{IBM-HPC Labs}}{Bangalore}{Mentor: Seshasayee V Subramanian}{May 2012 - July 2012}
+				{\footnotesize
+				\begin{itemize}
+					\resitem{Parallel Algorithms for Big data Analytics}
+					\resitem{Implemented parallel version for \emph{K-Means clustering} algorithm on \emph{MR-MPI} frameworks}
+					\resitem{Scaleup \& Scaleout is measured across several data upto 5 high compute nodes}
+				\end{itemize}
+				}
+		\item 
+			\ressubheading{{Juniper Networks}}{Bangalore}{Mentor: Uday Kishore}{May 2011 - July 2011}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Analysis \& Recommendations for migration of centralized database to distribued file systems \& databases}
+				\end{itemize}
+				}
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Experience}
+\begin{itemize}
+	\item
+		\ressubheading{{Kiwi Inc.}}{Bangalore}{}{July 2013 - Present}
+		{\footnotesize
+			\begin{itemize}
+				\resitem{Working on cross-platform game developement for iOS \& android.}
+				\resitem{Worked on both client and server side development for the game application.}
+			\end{itemize}
+		}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Past projects}
+	\begin{itemize}
+		\item
+			\ressubheading{{Strength reduction of python loops to Map, Reduce \& Filter}}{}{Instructor: Dr.Shankar Balachandran}{Aug 2011 -- Nov 2011}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Designed and implemented Control \& Data flow analyses for python programs.}
+					\resitem{Implemented to handle \emph{for} loops and \emph{nested for} loops}
+					\resitem{Transformations are implemented as pass structure.}
+					\resitem{Experimented with real time program: \emph{Association rule mining}}
+				\end{itemize}
+				}
+		\item
+			\ressubheading{{Spam Filter}}{}{Instructor: Dr.Sutanu Chakraborti}{Aug 2011 -- Nov 2011}
+			{\footnotesize
+			\begin{itemize}
+				\resitem{Designed and implemented \emph{Bayesian Spam filter} for spam classification}
+			\end{itemize}
+			}
+		\item
+			\ressubheading{{VLSI Automation algorithms}}{}{Instructor: Dr.Shankar Balachandran}{Jan 2011 -- April 2011}
+			{ \footnotesize
+			\begin{itemize}
+				\resitem{Implemented placement heuristics for VLSI chips to minimize the chip area \& the total wire length.}
+			    \resitem{Achieved promising results on IBM benchmarks.}
+			\end{itemize}
+			}
+		\item
+			\ressubheading{{Pint-OS}}{}{Instructor: Dr.Krishna Sivalingam} {Aug 2010 -- Nov 2010}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Pint-OS a partially developed kernel.}
+					\resitem{Implemented priority scheduling, system calls \& demand paging.}
+				\end{itemize}
+				}
+		\item
+			\ressubheading{{Compiler for Pascal}}{}{Instructor: Dr.Siva Ram Murty} {Aug 2010 -- Nov 2010}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Developed compiler for Pascal language, starting from syntax analyzer till the generation of intermediate code in C.}
+					\resitem{Implemented using Unix tools Flex, Yacc \& C languague.}
+				\end{itemize}
+				}
+		\item
+			\ressubheading{{Dead block detection in cache}}{}{Instructor: Dr.Madhu Mutyam}{Aug 2010 -- Nov 2010}
+			{ \footnotesize
+			\begin{itemize}
+				\resitem{Simulated dead block detection \& eviction in using cache burst techniques.}
+				\resitem{Implemented using M5 simulator.}
+			\end{itemize}
+			}
+		\item
+			\ressubheading{{Computational Biology}}{}{Guide: Dr.Ashish V Tendulkar}{May 2010 -- July 2010}
+			{ \footnotesize
+			\begin{itemize}
+				\resitem{Protiens represented as graphs, task is to extract various graph properties.}
+				\resitem{Implemented various graph algorithms in C++.}
+			\end{itemize}
+			}
+		\item
+			\ressubheading{{Case Based Reasoning}}{}{Instructor: Dr.Sutanu Chakraborti}{Jan 2012 -- April 2012}
+			{ \footnotesize
+			\begin{itemize}
+				\resitem{Implemented \emph{Case Based Reasoning System for Genre classification} in MATLAB.}
+			\end{itemize}
+			}
+		\item
+			\ressubheading{{4-Bit Processor}}{}{Instructor: Dr.Madhu Mutyam}{Aug 2009 -- Nov 2009}
+			{ \footnotesize
+			\begin{itemize}
+				\resitem{Designed and implemented various components of processor such as ALU, instruction decoder, \& register files.}
+				\resitem{Implemented in Verilog-HDL.}
+			\end{itemize}
+			}
+	\end{itemize}  % End Experience list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Positions of Responsibility}
+    \begin{itemize}
+        \item \footnotesize Events core team member for Exebit-2012.
+        \item \footnotesize Coodinator for workshop on \emph{Parallel programming} for Exebit-2011.
+        \item \footnotesize Design coordinator for Exebit-2010.
+    \end{itemize}
+\end{document}
